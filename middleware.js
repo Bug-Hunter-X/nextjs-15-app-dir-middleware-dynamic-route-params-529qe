@@ -1,0 +1,1 @@
+In Next.js 15, an uncommon error can occur when using the `app` directory and middleware with dynamic routes.  If you have a route like `/product/[id]` and attempt to access the `params` object within middleware, it might be undefined, leading to unexpected behavior or crashes. This is because the `params` object is populated later in the request lifecycle.
